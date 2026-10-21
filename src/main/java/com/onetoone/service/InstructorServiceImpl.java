@@ -18,7 +18,7 @@ import java.util.Optional;
 @Service
 public class InstructorServiceImpl implements InstructorService{
 
-    private static Logger logger = LoggerFactory.getLogger("InstructorServiceImpl");
+    private static final Logger logger = LoggerFactory.getLogger(InstructorServiceImpl.class);
 
     private InstructorRepo instructorRepo;
 
