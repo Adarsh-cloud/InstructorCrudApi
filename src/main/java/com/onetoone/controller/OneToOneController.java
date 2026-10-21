@@ -1,14 +1,10 @@
 package com.onetoone.controller;
 
 import com.onetoone.dto.InstructorDTO;
-import com.onetoone.service.InstructorService;
+import com.onetoone.service.instructor.InstructorService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.NumberFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

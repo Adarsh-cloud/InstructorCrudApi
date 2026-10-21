@@ -1,4 +1,4 @@
-package com.onetoone.service;
+package com.onetoone.service.instructor;
 
 import com.onetoone.dto.InstructorDTO;
 

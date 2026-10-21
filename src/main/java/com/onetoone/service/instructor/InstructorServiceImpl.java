@@ -1,4 +1,4 @@
-package com.onetoone.service;
+package com.onetoone.service.instructor;
 
 import com.onetoone.dao.InstructorRepo;
 import com.onetoone.dto.InstructorDTO;
@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class InstructorServiceImpl implements InstructorService{
+public class InstructorServiceImpl implements InstructorService {
 
     private static final Logger logger = LoggerFactory.getLogger(InstructorServiceImpl.class);
 
