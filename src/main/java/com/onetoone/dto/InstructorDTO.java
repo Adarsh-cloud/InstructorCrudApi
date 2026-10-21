@@ -1,5 +1,9 @@
 package com.onetoone.dto;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,9 +13,14 @@ import lombok.Setter;
 @NoArgsConstructor
 public class InstructorDTO {
     private Integer id;
+    @NotBlank(message = "{InstructorDTO.firstName}")
     private String firstName;
+    @NotBlank(message = "{InstructorDTO.lastName}")
     private String lastName;
+    @Email(message = "{InstructorDTO.email.invalid}")
+    @NotBlank(message = "{InstructorDTO.email.blank}")
     private String email;
+    @Valid
     private InstructorDetailDTO instructorDetail;
 
     @Override
